@@ -1,0 +1,137 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.s reservados.
+                                                         ps://aka.ms/pscore6
+Prueba la nueva tecnología PowerShell multiplataforma htt
+https://aka.ms/pscore6
+
+PS C:\AppServ\www\curso-mp-node> npm init --yes
+Wrote to C:\AppServ\www\curso-mp-node\package.json:
+
+{
+  "name": "curso-mp-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit  },                                                   1"
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+Initialized empty Git repository in C:/AppServ/www/curso-mp-node/.git/
+The file will have its original line endings in your working directory
+PS C:\AppServ\www\curso-mp-node> git commit -m "first commit"
+[master (root-commit) b5bbb99] first commit
+ 3 files changed, 14 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 index.html
+ create mode 100644 package.json
+PS C:\AppServ\www\curso-mp-node> git branch -M main
+PS C:\AppServ\www\curso-mp-node> git remote add origin https://github.com/gerardomay1Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/gerardomay15643/mp-node-express.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+PS C:\AppServ\www\curso-mp-node> git add .
+PS C:\AppServ\www\curso-mp-node> git commit -m "video 1"
+[main a414194] video 1
+ 2 files changed, 37 insertions(+), 1 deletion(-)
+ create mode 100644 assets/34.jpg
+PS C:\AppServ\www\curso-mp-node> git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 39.13 KiB | 4.89 MiB/s, done.
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+npm notice created a lockfile as package-lock.json. You should commit this file.     
+npm WARN curso-mp-node@1.0.0 No description
+npm WARN curso-mp-node@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors in 11.744s
+PS C:\AppServ\www\curso-mp-node>
+
+                                 node src/index
+server on port 3000
+PS C:\AppServ\www\curso-mp-node> npm install -D nodemon
+
+> nodemon@2.0.12 postinstall C:\AppServ\www\curso-mp-node\node_modules\nodemon       
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@~2.3.2 (node_modules\chokidar\node_modules\fsevents):
+"win32","arch":"x64"})
+npm WARN curso-mp-node@1.0.0 No description
+npm WARN curso-mp-node@1.0.0 No repository field.
+
++ nodemon@2.0.12
+added 117 packages from 53 contributors in 48.125s
+
+11 packages are looking for funding
+  run `npm fund` for details
+
+PS C:\AppServ\www\curso-mp-node> npm run watch
+
+> curso-mp-node@1.0.0 watch C:\AppServ\www\curso-mp-node
+
+[nodemon] 2.0.12
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node src/index.js`
+server on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+server on port 3000
+PS C:\AppServ\www\curso-mp-node> npm install mercadopago
+npm WARN deprecated uuid@3.0.1: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic. 
+ See https://v8.dev/blog/math-random for details.
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN curso-mp-node@1.0.0 No description
+npm WARN curso-mp-node@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+npm ERR! code EPERM
+npm ERR! syscall rename
+npm ERR! path C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json.830996015
+npm ERR! dest C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json
+npm ERR! errno -4048
+npm ERR! Error: EPERM: operation not permitted, rename 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json.830996015' -> 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json'
+npm ERR!  [OperationalError: EPERM: operation not permitted, rename 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json.830996015' -> 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json'] {
+npm ERR!   cause: [Error: EPERM: operation not permitted, rename 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json.830996015' -> 'C:\AppServ\www\curso-mp-node\node_modules\getpass\package.json'] {
+npm ERR!     errno: -4048,
+npm ERR!     code: 'EPERM',
+npm ERR!     syscall: 'rename',
+npm ERR!     path: 'C:\\AppServ\\www\\curso-mp-node\\node_modules\\getpass\\package.json.830996015',
+npm ERR!     dest: 'C:\\AppServ\\www\\curso-mp-node\\node_modules\\getpass\\package.json'
+npm ERR!   },
+npm ERR!   errno: -4048,
+npm ERR!   code: 'EPERM',
+npm ERR!   syscall: 'rename',
+npm ERR!   path: 'C:\\AppServ\\www\\curso-mp-node\\node_modules\\getpass\\package.json.830996015',
+npm ERR!   dest: 'C:\\AppServ\\www\\curso-mp-node\\node_modules\\getpass\\package.json',
+npm ERR!   parent: 'curso-mp-node'
+npm ERR! }
+npm ERR!
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It's possible that the file was already in use (by a text editor or antivirus),
+npm ERR! or that you lack permissions to access it.
+npm ERR!
+npm ERR! If you believe this might be a permissions issue, please double-check the   
+npm ERR! permissions of the file and its containing directories, or try running      
+npm ERR! the command again as root/Administrator.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\gerar\AppData\Roaming\npm-cache\_logs\2021-08-20T06_16_21_761Z-debug.log
+PS C:\AppServ\www\curso-mp-node> 
+
+EL ERROR ANTERIOR ES DEBIDO A LA UBICACION DE LA CARPETA DEL PROYECTO
